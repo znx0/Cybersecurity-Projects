@@ -6,7 +6,7 @@ A collection of my practical cybersecurity and programming work, from foundation
 
 ## 🚀 Explore
 
-🔗 **[View My Projects →](./projects/)**
+🔗 **[View My Projects →](./projects/)**<br>
 🔗 **[View My CTF Writeups →](./writeups/)**
 
 My work focuses on:
