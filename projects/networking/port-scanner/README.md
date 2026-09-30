@@ -18,10 +18,10 @@ This project is focused on learning the fundamentals of **Python networking, TCP
 
 ## 🚀 Features
 
-* [ ] Scan a single TCP port
-* [ ] Scan a range of TCP ports
-* [ ] Detect open vs closed ports
-* [ ] Handle connection timeouts gracefully
+* [x] Scan a single TCP port
+* [x] Scan a range of TCP ports
+* [x] Detect open vs closed ports
+* [x] Handle connection timeouts gracefully
 * [ ] Add command-line arguments (argparse)
 * [ ] Multi-threaded scanning for better performance
 * [ ] Scan results logging
