@@ -1,6 +1,6 @@
 # 🔎 Port Scanner
 
-[!][Port Scanner Demo](assets/port-scanner.png)
+![Port Scanner Demo](assets/port-scanner.png)
 
 A simple TCP port scanner written in Python, built as part of my cybersecurity learning journey.
 
