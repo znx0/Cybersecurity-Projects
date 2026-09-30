@@ -1,11 +1,20 @@
 import socket
 import sys
+import argparse
 from datetime import datetime
 
-#Definir o alvo (neste caso, o localhost)
-target_input = input("Enter the target host (IP or hostname): ") 
-start_port = int(input("Enter the starting port number (1-65535): "))
-end_port = int(input("Enter the ending port number (1-65535): "))
+
+parser = argparse.ArgumentParser(description="Start port scanning")
+
+parser.add_argument("target", help="Target IP address or hostname")
+parser.add_argument("start_port", type=int, help="Starting port number")
+parser.add_argument("end_port", type=int, help="Ending port number")
+
+args = parser.parse_args()
+
+target_input = args.target
+start_port = args.start_port
+end_port = args.end_port
 
 if (start_port < 1 or start_port > 65535) or (end_port < 1 or end_port > 65535) or (start_port > end_port):
     print("Invalid port range. Please enter valid port numbers between 1 and 65535.")
