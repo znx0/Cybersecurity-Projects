@@ -93,7 +93,7 @@ More usage instructions will be added as the project evolves.
 
 ---
 
-#Limitations
+# ⚠️ Limitations
 
 This is a basic TCP port scanner and currently has some limitations:
 
