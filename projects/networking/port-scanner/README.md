@@ -1,5 +1,7 @@
 # 🔎 Port Scanner
 
+[!][Port Scanner Demo](assets/port-scanner.png)
+
 A simple TCP port scanner written in Python, built as part of my cybersecurity learning journey.
 
 This project is focused on learning the fundamentals of **Python networking, TCP connections and port scanning**.
@@ -22,7 +24,7 @@ This project is focused on learning the fundamentals of **Python networking, TCP
 * [x] Scan a range of TCP ports
 * [x] Detect open vs closed ports
 * [x] Handle connection timeouts gracefully
-* [ ] Add command-line arguments (argparse)
+* [x] Add command-line arguments (argparse)
 * [ ] Multi-threaded scanning for better performance
 * [ ] Scan results logging
 
