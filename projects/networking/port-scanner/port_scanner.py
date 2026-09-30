@@ -1,9 +1,9 @@
 import socket
 import sys
 import argparse
-from datetime import datetime
+import time
 
-
+start_time = time.perf_counter()
 parser = argparse.ArgumentParser(description="Start port scanning")
 
 parser.add_argument("target", help="Target IP address or hostname")
@@ -22,29 +22,39 @@ if (start_port < 1 or start_port > 65535) or (end_port < 1 or end_port > 65535) 
 
 print("-" * 50)
 print(f"Scanning Target: {target_input}")
-print(f"Time Started: {str(datetime.now())}")
+print(f"Port Range: {start_port} to {end_port}")
 print("-" * 50)
 
 try:
-    #Reolver o hostname para IP
+    # Reolver o hostname para IP
     target_ip = socket.gethostbyname(target_input)
 
     ports_open = 0
-    #definir um range de portas para escanear (1-65354)
+    # Definir um range de portas para escanear (1-65354)
     for port in range(start_port, end_port + 1):
-        #Criar o socket
+        # Criar o socket
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.settimeout(0.5) #timetout de 0.5s
+        s.settimeout(0.5) # Timetout de 0.5s
 
         # Tentar conectar ao alvo na porta especificada
         result = s.connect_ex((target_ip, port))
 
         if result == 0:
-            print(f"Port {port} is OPEN!")
+            request = f"GET / HTTP/1.0\r\nHost: {target_ip}\r\n\r\n"
+            service = socket.getservbyport(port)
+            s.send(request.encode())  # Enviar uma mensagem para o servidor
+            version = s.recv(1024)  # Receber a resposta do servidor
+            banner = version.decode(errors='ignore').splitlines()[0] if version else "No banner received"
+            print(f" {port} OPEN {service} {banner}")
             ports_open += 1
+
         s.close()
 
     print(f"\nScan completed! Found {ports_open} open ports.")
+
+    end_time = time.perf_counter()
+    duration = end_time - start_time
+    print(f"Scan completed in {duration:.2f} seconds.")
 
 except KeyboardInterrupt:
     print("\n[!] Script stopped by user (Ctrl+C). Exiting.")
