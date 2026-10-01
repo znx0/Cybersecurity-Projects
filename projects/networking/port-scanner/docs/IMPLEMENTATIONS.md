@@ -37,7 +37,7 @@ start_port = args.start_port
 end_port = args.end_port
 ```
 
-###2. Port Range Validation
+### 2. Port Range Validation
 
 Before initiating network traffic, validation rules ensure that ports fall within the valid TCP range and that the range is logically consistent.
 
@@ -52,7 +52,7 @@ print(f"Port Range: {start_port} to {end_port}")
 print("-" * 50)
 ```
 
-###3. DNS Resolution & Core Scanning Loop
+### 3. DNS Resolution & Core Scanning Loop
 
 The application resolves hostnames into IPV4 addresses and loops sequentially through the specified port range.
 
@@ -75,7 +75,7 @@ try:
 * **s.settimeout(0.5):** Restricts connection attempts so unresponsive ports don't block execution indefinitely
 * **connect_ex():** Returns 0 on a successful connection without triggering exceptions for closed ports.
 
-###4. Service Identification & Banner Grabbing
+### 4. Service Identification & Banner Grabbing
 
 When an open port is found (result == 0), the script queries the service name and sends an HTTP/1.0 probe to capture the server banner.
 
@@ -103,7 +103,7 @@ When an open port is found (result == 0), the script queries the service name an
 * **Service Mapping (socket.getservbyport):** Automatically maps standad port number to their commom protocol names
 * **The Limitation of Universal Probing:** The script sends an HTTP/1.0 GET request blindly to every open port. While effective for web servers, non-HTTP services (like SSH, FTP, or SMTP) use completely different application-layer rules. For instance, SSH sends its version string immediately upon connection without waiting for a client request, whereas FTP expects specific commands. To grab banners accurately across diverse services, each protocol would need to be manually identified and matched with its specific request payload.
 
-###5. Exception Handling
+### 5. Exception Handling
 
 Targeted exception handlers prevent stack traces and ensure a graceful user experience during interruptions or network failures.
 
