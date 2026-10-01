@@ -2,7 +2,7 @@
 A collection of practical cybersecurity and programming work, ranging from core concepts to advanced security tooling.
 
 > [!NOTE]
-> Navigation: View Projects **[→](https://github.com/znx0/CyberSecurity-Projects)** &nbsp;|&nbsp; View CTF Writeups **[→](https://github.com/znx0/Cybersecurity-Projects/tree/main/writeups)**
+> Navigation: View Projects **[→](https://github.com/znx0/CyberSecurity-Projects/tree/main/projects)** &nbsp;|&nbsp; View CTF Writeups **[→](https://github.com/znx0/Cybersecurity-Projects/tree/main/writeups)**
 
 ## Focus Areas & Tech Stack
 Core domains and technologies utilized across repositories:
