@@ -1,16 +1,16 @@
-# Cybersecurity Projects 🛡️
+# Cybersecurity Projects
 
 A collection of my practical cybersecurity and programming work, from foundational concepts to more advanced security tooling.
 
 ---
 
-## 🚀 Explore
+## Explore
 
 🔗 **[View My Projects →](./projects/)**<br>
 🔗 **[View My CTF Writeups →](./writeups/)**
 ---
 
-## 🎯 Focus Areas & Tech Stack
+## Focus Areas & Tech Stack
 
 My work focuses on and utilizes:
 
@@ -27,7 +27,7 @@ My work focuses on and utilizes:
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
