@@ -21,11 +21,11 @@ My work focuses on:
 
 ## 🛠️ Tech Stack
 
-* **Python**
-* **Bash / PowerShell**
-* **C**
-* **Linux**
-* **Networking**
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=linux,c,py,network&perline=6" alt="My Skills" height="64" />
+  </a>
+</p>
 
 ---
 
