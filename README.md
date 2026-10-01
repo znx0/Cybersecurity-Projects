@@ -23,7 +23,7 @@ My work focuses on and utilizes:
 * ⚙️ **C** — Low-level programming and security fundamentals 
   <img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black" alt="C" />
 * 🌐 **Networking** — Network analysis, scanning and protocols 
-  <img src="https://img.shields.io/badge/Networking-TCP%2FIP-blue?style=flat-square&logo=cisco&logoColor=white" alt="Networking" /> <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Networking-TCP%2FIP-blue?style=flat-square&logo=cisco&logoColor=white" alt="Networking" />
 
 ---
 
