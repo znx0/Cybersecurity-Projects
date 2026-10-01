@@ -1,9 +1,21 @@
-# /projects
+# Projects
 
 > Practical cybersecurity implementations, tools, and automation scripts developed for research, offensive security, and protocol analysis.
 
 ## Structure
-- **networking/** — Socket programming, packet analysis, and network utility tools.
-
+```
+.
+Projects/
+  ├── README.md
+  └── networking/
+  |   └── port-scanner/
+  |       ├── assets/
+  |       ├── docs/
+  |       |   ├── IMPLEMENTATIONS.md
+  |       |   └── CHALLENGES.md
+  |       └── port_scanner.py
+  └── scripting/
+      └── ...
+```
 ## Usage
 All scripts and tools within this directory are intended solely for educational purposes, security research, and authorized testing environments.
