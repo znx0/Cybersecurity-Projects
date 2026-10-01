@@ -22,9 +22,10 @@ My work focuses on:
 ## 🛠️ Tech Stack
 
 <p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=linux,c,py,network&perline=6" alt="My Skills" height="64" />
-  </a>
+  <img src="https://img.shields.io/badge/Networking-TCP%2FIP-blue?style=for-the-badge&logo=cisco&logoColor=white" alt="Networking" />
+  <img src="https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white" alt="Wireshark" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 </p>
 
 ---
