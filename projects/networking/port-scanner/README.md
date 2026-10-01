@@ -52,48 +52,7 @@ This project is focused on learning the fundamentals of **Python networking, TCP
 
 ---
 
-## ▶️ Usage
-
-```bash
-python3 port_scanner.py <target> <start_port> <end_port>
-```
-# Example
-
-Scan ports `1` to `1024` on localhost:
-
-```bash
-python3 port_scanner.py 127.0.0.1 1 1024
-```
-You cal also scan a hostname:
-
-```bash
-python3 port_scanner.py example.com 1 1024
-```
-# 🧪Testing with a Local Server
-
-To test the scanner safely, you can create a single HTTP server using Python:
-```bash
-python3 -m http.server 8080
-```
-In another terminal, run the scanner:
-```bash
-python3 port_scanner.py 127.0.0.1 1000 8100
-```
-
-The scanner should detect port `8080` as open:
-
-```bash
-8080 OPEN http
-```
-
-This is useful for testing because the server is running locally on your own machine, without scanning externas systems.
-
-Press `Ctrl+C` in the server terminal to stop the HTTP server when finished.
-More usage instructions will be added as the project evolves.
-
----
-
-# ⚠️ Limitations
+## ⚠️ Limitations
 
 This is a basic TCP port scanner and currently has some limitations:
 
